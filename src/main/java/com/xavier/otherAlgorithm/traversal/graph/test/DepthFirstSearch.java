@@ -1,47 +1,44 @@
-package com.xavier.otherAlgorithm.traversal.test;
+package com.xavier.otherAlgorithm.traversal.graph.test;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 import java.util.stream.Stream;
 
-public class BroadFirstSearch {
+public class DepthFirstSearch {
 
-    private Graph graph;
+    public Graph graph;
 
     public LinkedList<Integer> queue = new LinkedList<>();
 
-    public BroadFirstSearch() {
+    public DepthFirstSearch() {
         graph = initGraph();
         graph.showGraph();
     }
 
-    public void BFS() {
+    public void DFS() {
         int size = graph.vertexList.size();
         for (int i = 0; i < size; i++) {
             if (!graph.visited[i]) {
-                BFS(graph.visited, i);
+                DFS(graph.visited, i);
             }
         }
     }
 
-    public void BFS(boolean[] visited, int start) {
-        System.out.print(graph.getItemByIndex(start) + "-->");
-        visited[start] = true;
-        queue.add(start);
+    public void DFS(boolean[] visited, int start) {
+        queue.addFirst(start);
         while (!queue.isEmpty()) {
-            Integer pop = queue.poll();
-            int next = graph.getFirstNeighbor(pop);
-            while (next != -1) {
-                if (!visited[next]) {
-                    System.out.print(graph.getItemByIndex(next) + "-->");
-                    visited[next] = true;
-                    queue.add(next);
+            Integer pop = queue.removeFirst();
+            if (!visited[pop]) {
+                System.out.print(graph.getItemByIndex(pop) + "-->");
+                visited[pop] = true;
+                int next = graph.getFirstNeighbor(pop);
+                while (next != -1) {
+                    if (!visited[next]) {
+                        queue.addFirst(next);
+                    }
+                    next = graph.getNextNeighbor(pop, next);
                 }
-                next = graph.getNextNeighbor(pop, next);
             }
         }
-
     }
 
     public Graph initGraph() {

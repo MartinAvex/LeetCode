@@ -1,4 +1,4 @@
-package com.xavier.otherAlgorithm.traversal.test;
+package com.xavier.otherAlgorithm.traversal.graph.test;
 
 import java.util.ArrayList;
 import java.util.Arrays;

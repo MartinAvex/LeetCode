@@ -1,44 +1,45 @@
-package com.xavier.otherAlgorithm.traversal.test;
+package com.xavier.otherAlgorithm.traversal.graph.test;
 
-import java.util.*;
+import java.util.LinkedList;
 import java.util.stream.Stream;
 
-public class DepthFirstSearch {
+public class BroadFirstSearch {
 
-    public Graph graph;
+    private Graph graph;
 
     public LinkedList<Integer> queue = new LinkedList<>();
 
-    public DepthFirstSearch() {
+    public BroadFirstSearch() {
         graph = initGraph();
         graph.showGraph();
     }
 
-    public void DFS() {
+    public void BFS() {
         int size = graph.vertexList.size();
         for (int i = 0; i < size; i++) {
             if (!graph.visited[i]) {
-                DFS(graph.visited, i);
+                BFS(graph.visited, i);
             }
         }
     }
 
-    public void DFS(boolean[] visited, int start) {
-        queue.addFirst(start);
+    public void BFS(boolean[] visited, int start) {
+        System.out.print(graph.getItemByIndex(start) + "-->");
+        visited[start] = true;
+        queue.add(start);
         while (!queue.isEmpty()) {
-            Integer pop = queue.removeFirst();
-            if (!visited[pop]) {
-                System.out.print(graph.getItemByIndex(pop) + "-->");
-                visited[pop] = true;
-                int next = graph.getFirstNeighbor(pop);
-                while (next != -1) {
-                    if (!visited[next]) {
-                        queue.addFirst(next);
-                    }
-                    next = graph.getNextNeighbor(pop, next);
+            Integer pop = queue.poll();
+            int next = graph.getFirstNeighbor(pop);
+            while (next != -1) {
+                if (!visited[next]) {
+                    System.out.print(graph.getItemByIndex(next) + "-->");
+                    visited[next] = true;
+                    queue.add(next);
                 }
+                next = graph.getNextNeighbor(pop, next);
             }
         }
+
     }
 
     public Graph initGraph() {
