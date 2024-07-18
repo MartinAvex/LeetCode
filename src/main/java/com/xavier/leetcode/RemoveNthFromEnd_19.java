@@ -1,4 +1,6 @@
-package com.xavier.leetcode.removeNthFromEnd_19;
+package com.xavier.leetcode;
+
+import com.xavier.common.ListNode;
 
 /**
  * 19. 删除链表的倒数第 N 个结点
@@ -26,7 +28,7 @@ package com.xavier.leetcode.removeNthFromEnd_19;
  *
  * 进阶：你能尝试使用一趟扫描实现吗？
  */
-public class RemoveNthFromEnd {
+public class RemoveNthFromEnd_19 {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0, head);

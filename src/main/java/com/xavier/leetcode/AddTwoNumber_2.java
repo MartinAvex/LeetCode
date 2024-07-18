@@ -1,4 +1,6 @@
-package com.xavier.leetcode.addTwoNumbers_2;
+package com.xavier.leetcode;
+
+import com.xavier.common.ListNode;
 
 /**
  * 2. 两数相加
@@ -27,7 +29,7 @@ package com.xavier.leetcode.addTwoNumbers_2;
  * 0 <= Node.val <= 9
  * 题目数据保证列表表示的数字不含前导零
  */
-public class AddTwoNumber {
+public class AddTwoNumber_2 {
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));

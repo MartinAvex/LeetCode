@@ -1,4 +1,6 @@
-package com.xavier.leetcode.isSameTree_100;
+package com.xavier.leetcode;
+
+import com.xavier.common.TreeNode;
 
 import java.util.*;
 
@@ -24,7 +26,7 @@ import java.util.*;
  * 两棵树上的节点数目都在范围 [0, 100] 内
  * -104 <= Node.val <= 104
  */
-public class IsSameTree {
+public class IsSameTree_100 {
     public static void main(String[] args) {
         TreeNode p = new TreeNode(1, null, new TreeNode(2));
         TreeNode q = new TreeNode(1, new TreeNode(2), null);

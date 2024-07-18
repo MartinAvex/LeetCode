@@ -1,4 +1,6 @@
-package com.xavier.leetcode.isPalindrome_234;
+package com.xavier.leetcode;
+
+import com.xavier.common.ListNode;
 
 import java.util.Stack;
 
@@ -23,7 +25,7 @@ import java.util.Stack;
  *
  * 进阶：你能否用 O(n) 时间复杂度和 O(1) 空间复杂度解决此题？
  */
-public class IsPalindrome {
+public class IsPalindrome_234 {
 
     public static void main(String[] args) {
 
