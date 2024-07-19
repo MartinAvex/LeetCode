@@ -30,7 +30,7 @@ package com.xavier.leetcode;
  *
  * 如果多次调用这个函数，你将如何优化你的算法？
  */
-public class HammingWeight_191 {
+public class _191_HammingWeight {
 
     /*
     * [if(n&1) == 1 count++;] 与 [count += n&1]等价

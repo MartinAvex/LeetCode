@@ -25,7 +25,7 @@ package com.xavier.leetcode;
  *
  * 0 <= x, y <= 231 - 1
  */
-public class HammingDistance_461 {
+public class _461_HammingDistance {
 
     public int hammingDistance(int x, int y) {
         int res = x^y;

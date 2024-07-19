@@ -30,7 +30,7 @@ import java.util.Stack;
  *
  * 进阶：递归算法很简单，你可以通过迭代算法完成吗？
  */
-public class PostorderTraversal_145 {
+public class _145_PostorderTraversal {
 
     public static void main(String[] args) {
 

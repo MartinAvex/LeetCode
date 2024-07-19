@@ -29,7 +29,7 @@ import java.util.Stack;
  * 1 <= s.length <= 104
  * s 仅由括号 '()[]{}' 组成
  */
-public class IsValid_20 {
+public class _20_IsValid {
 
     public static void main(String[] args) {
 

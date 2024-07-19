@@ -28,7 +28,7 @@ import java.util.HashMap;
  * -3 * 104 <= nums[i] <= 3 * 104
  * 除了某个元素只出现一次以外，其余每个元素均出现两次。
  */
-public class SingleNumber_136 {
+public class _136_SingleNumber {
 
     public static void main(String[] args) {
         int[] nums = {3,2,1,0,1,2,3};

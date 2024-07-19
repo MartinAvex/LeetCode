@@ -28,7 +28,7 @@ package com.xavier.leetcode;
  * 1 <= n, m <= 100
  * 1 <= nums1[i], nums2[i] <= 100
  */
-public class FindIntersectionValues_2956 {
+public class _2956_FindIntersectionValues {
 
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
         int[] answer = new int[2];

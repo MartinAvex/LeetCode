@@ -1,7 +1,6 @@
 package com.xavier.leetcode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -23,7 +22,7 @@ import java.util.List;
  *
  * 1 <= numRows <= 30
  */
-public class Generate_118 {
+public class _118_Generate {
 
     public static void main(String[] args) {
         System.out.println(generate(5));

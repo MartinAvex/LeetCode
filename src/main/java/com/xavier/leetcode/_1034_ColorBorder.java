@@ -33,7 +33,7 @@ package com.xavier.leetcode;
  * 0 <= row < m
  * 0 <= col < n
  */
-public class ColorBorder_1034 {
+public class _1034_ColorBorder {
 
     public int[][] colorBorder(int[][] grid, int row, int col, int color) {
         return null;

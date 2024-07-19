@@ -22,7 +22,7 @@ import java.util.Stack;
  * 树中节点数目在范围 [1, 1000] 内
  * -100 <= Node.val <= 100
  */
-public class IsSymmetric_101 {
+public class _101_IsSymmetric {
 
     public boolean isSymmetric(TreeNode root) {
         if (root == null) {

@@ -1,10 +1,5 @@
 package com.xavier.leetcode;
 
-import org.springframework.util.StringUtils;
-
-import java.util.Enumeration;
-import java.util.Stack;
-
 /**
  * 1544. 整理字符串
  * 给你一个由大小写英文字母组成的字符串 s 。
@@ -38,7 +33,7 @@ import java.util.Stack;
  * 1 <= s.length <= 100
  * s 只包含小写和大写英文字母
  */
-public class MakeGood_1544 {
+public class _1544_MakeGood {
 
     public static void main(String[] args) {
         System.out.println(makeGood("leEeetcode"));

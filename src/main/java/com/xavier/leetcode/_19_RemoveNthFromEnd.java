@@ -28,7 +28,7 @@ import com.xavier.common.ListNode;
  *
  * 进阶：你能尝试使用一趟扫描实现吗？
  */
-public class RemoveNthFromEnd_19 {
+public class _19_RemoveNthFromEnd {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(0, head);

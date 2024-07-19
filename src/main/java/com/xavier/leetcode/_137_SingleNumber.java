@@ -21,7 +21,7 @@ package com.xavier.leetcode;
  * -231 <= nums[i] <= 231 - 1
  * nums 中，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次
  */
-public class singleNumber_137 {
+public class _137_SingleNumber {
 
     public int singleNumber(int[] nums) {
         //TODO

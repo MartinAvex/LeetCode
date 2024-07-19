@@ -31,7 +31,7 @@ import java.util.Stack;
 
  * 进阶: 递归算法很简单，你可以通过迭代算法完成吗？
  */
-public class InorderTraversal_94 {
+public class _94_InorderTraversal {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

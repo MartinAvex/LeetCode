@@ -29,7 +29,7 @@ import com.xavier.common.ListNode;
  * 0 <= Node.val <= 9
  * 题目数据保证列表表示的数字不含前导零
  */
-public class AddTwoNumber_2 {
+public class _2_AddTwoNumber {
 
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));

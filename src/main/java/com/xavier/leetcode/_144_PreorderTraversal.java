@@ -38,7 +38,7 @@ import java.util.Stack;
  *
  * 进阶：递归算法很简单，你可以通过迭代算法完成吗？
  */
-public class PreorderTraversal_144 {
+public class _144_PreorderTraversal {
 
     public static void main(String[] args) {
 

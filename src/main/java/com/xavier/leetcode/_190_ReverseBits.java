@@ -31,7 +31,7 @@ package com.xavier.leetcode;
  *
  * 进阶: 如果多次调用这个函数，你将如何优化你的算法？
  */
-public class ReverseBits_190 {
+public class _190_ReverseBits {
 
     public static void main(String[] args) {
         String str = "00000010100101000001111010011100";
